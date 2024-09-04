@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.acordeon {
+    background-color: grey;
+    padding: 1rem;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0;
+}
+
+.acordeon::after {
+    font-family: "bootstrap-icons";
+    content: "\F4FA";
+    font-size: 2rem;
+}
+
+
+.desc {
+    width: 1200px;
+    max-height: 0;
+    overflow: hidden;
+    transition:max height .5s ease-in-out;
+    padding: 0 1rem;
+}
+
+.active::after {
+    font-family: "bootstrap-icons";
+    content: "\F2E6";
+    font-size: 2rem;
+    
+}
